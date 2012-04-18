@@ -159,7 +159,11 @@ class ChoosePaymentMethodType extends AbstractType
         }
     }
 
-    public function getDefaultOptions(array $options)
+    /**
+     * (non-PHPdoc)
+     * @see Symfony\Component\Form.AbstractType::getDefaultOptions()
+     */
+    public function getDefaultOptions()
     {
         return array(
             'currency'        => null,
